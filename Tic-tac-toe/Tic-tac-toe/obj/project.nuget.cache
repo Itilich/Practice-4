@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qlvEh3VKGQ0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\aaper\\OneDrive\\Документы\\GitHub\\Practice-4\\Tic-tac-toe\\Tic-tac-toe\\Tic-tac-toe.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aaper\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.22.1\\microsoft.visualstudio.azure.containers.tools.targets.1.22.1.nupkg.sha512"
+  ],
+  "logs": []
+}
