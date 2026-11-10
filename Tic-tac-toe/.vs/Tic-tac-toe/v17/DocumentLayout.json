@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\aaper\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\Practice-4\\Tic-tac-toe\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABA7A9E-95F9-42E7-9D7B-45E71B60353A}|Tic-tac-toe\\Tic-tac-toe.csproj|c:\\users\\aaper\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\practice-4\\tic-tac-toe\\tic-tac-toe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABA7A9E-95F9-42E7-9D7B-45E71B60353A}|Tic-tac-toe\\Tic-tac-toe.csproj|solutionrelative:tic-tac-toe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABA7A9E-95F9-42E7-9D7B-45E71B60353A}|Tic-tac-toe\\Tic-tac-toe.csproj|c:\\users\\aaper\\onedrive\\\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\github\\practice-4\\tic-tac-toe\\tic-tac-toe\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABA7A9E-95F9-42E7-9D7B-45E71B60353A}|Tic-tac-toe\\Tic-tac-toe.csproj|solutionrelative:tic-tac-toe\\hubs\\gamehub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -31,8 +40,34 @@
         },
         {
           "DockedHeight": 260,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aaper\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\Practice-4\\Tic-tac-toe\\Tic-tac-toe\\Program.cs",
+              "RelativeDocumentMoniker": "Tic-tac-toe\\Program.cs",
+              "ToolTip": "C:\\Users\\aaper\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\Practice-4\\Tic-tac-toe\\Tic-tac-toe\\Program.cs",
+              "RelativeToolTip": "Tic-tac-toe\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T13:16:38.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameHub.cs",
+              "DocumentMoniker": "C:\\Users\\aaper\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\Practice-4\\Tic-tac-toe\\Tic-tac-toe\\Hubs\\GameHub.cs",
+              "RelativeDocumentMoniker": "Tic-tac-toe\\Hubs\\GameHub.cs",
+              "ToolTip": "C:\\Users\\aaper\\OneDrive\\\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u044B\\GitHub\\Practice-4\\Tic-tac-toe\\Tic-tac-toe\\Hubs\\GameHub.cs",
+              "RelativeToolTip": "Tic-tac-toe\\Hubs\\GameHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T13:15:32.615Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"

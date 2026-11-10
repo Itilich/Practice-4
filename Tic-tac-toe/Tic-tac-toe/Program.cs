@@ -1,3 +1,5 @@
+using Tic_tac_toe.Hubs;
+
 namespace Tic_tac_toe
 {
     public class Program
@@ -8,6 +10,8 @@ namespace Tic_tac_toe
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddSignalR();
 
             var app = builder.Build();
 
@@ -29,6 +33,8 @@ namespace Tic_tac_toe
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+
+            app.MapHub<GameHub>("/game");
 
             app.Run();
         }
