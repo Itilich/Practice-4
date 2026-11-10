@@ -1,4 +1,6 @@
 using Tic_tac_toe.Hubs;
+using Tic_tac_toe.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Tic_tac_toe
 {
@@ -12,8 +14,16 @@ namespace Tic_tac_toe
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddSignalR();
+            builder.Services.AddDbContext<GameDbContext>(options =>
+                options.UseSqlite(builder.Configuration.GetConnectionString("GameDatabase") ?? "Data Source=tictactoe.db"));
 
             var app = builder.Build();
+
+            using (var scope = app.Services.CreateScope())
+            {
+                var db = scope.ServiceProvider.GetRequiredService<GameDbContext>();
+                db.Database.EnsureCreated();
+            }
 
             // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())

@@ -1,8 +1,36 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Крестики-нолики онлайн";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<main class="game-shell">
+    <section class="game-card">
+        <h1>Крестики - нолики</h1>
+        <p class="intro">Создайте комнату и отправьте код сопернику</p>
+
+        <div class="setup-panel">
+            <label for="size">Размер поля</label>
+            <select id="size" class="form-select">
+                @for (var size = 3; size <= 7; size++) { <option value="@size" selected="@(size == 3)">@size × @size (нужно собрать @size)</option> }
+            </select>
+            <button id="create" class="btn btn-primary">Создать игру</button>
+        </div>
+        <div class="join-panel">
+            <label for="room-code">Или войдите по коду</label>
+            <div class="join-row"><input id="room-code" class="form-control" maxlength="6" placeholder="Например, A1B2C3" /><button id="join" class="btn btn-outline-primary">Войти</button></div>
+        </div>
+
+        <div id="game-area" hidden>
+            <div class="room-bar"><span>Код комнаты</span><strong id="room-label"></strong><button id="copy-code" class="btn btn-sm btn-light">Копировать</button></div>
+            <div id="status" class="status" aria-live="polite">Подключение…</div>
+            <div id="board" class="board" role="grid" aria-label="Игровое поле"></div>
+            <button id="reset" class="btn btn-outline-secondary reset-button">Начать заново</button>
+        </div>
+        <div id="notice" class="notice" role="status" aria-live="polite"></div>
+        <div class="connection"><span id="connection-dot"></span><span id="connection-text">Подключение к серверу…</span></div>
+    </section>
+</main>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.7/signalr.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+}
